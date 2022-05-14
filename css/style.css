@@ -39,6 +39,10 @@ html{
     font-style: normal;
 }
 
+html {
+    background-color: #F8F8F8;
+}
+
 body {
     min-width: 320px;
 }
@@ -47,6 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    background-color: #fff;
 }
 
 .right-header__item:first-of-type, .right-header__item:nth-of-type(2), .right-header__item:nth-of-type(3) {
@@ -382,6 +387,7 @@ body {
         align-items:flex-end;
         flex-wrap: wrap;
         width: 100%;
+        background-color: #F8F8F8;
     }
 
     .header__item:first-of-type {
