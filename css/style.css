@@ -147,21 +147,26 @@ body {
     padding: 0;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    overflow: auto;
+.header__item_nav {
     background-color: #F8F8F8;
 }
 
-.menu__link {
+.menu-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow: auto;
+    background-color: #F8F8F8;
+    margin-left: -24px;
+}
+
+.menu-list__link {
     display: flex;
     min-height: 40px;
     align-items: center;
 }
 
-.menu__link a {
+.menu-list__link a {
     white-space: nowrap;
     text-decoration: none;
     font-family: 'TT Lakes Medium';
@@ -174,14 +179,13 @@ body {
     padding-right: 12px;
 }
 
-.menu__link:first-of-type {
+.menu-list__link:first-of-type {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #fff;
-    margin-left: 16px;
 }
 
-.menu__link:last-of-type {
+.menu-list__link:last-of-type {
     margin-right: 16px;
 }
 
@@ -385,7 +389,7 @@ body {
         align-items: center;
     }
 
-    .menu {
+    .menu-list {
         overflow: visible;
         flex-wrap: wrap;
         justify-content: flex-start;
