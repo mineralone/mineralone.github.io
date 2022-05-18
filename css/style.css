@@ -244,7 +244,7 @@ button {
 
 @media (min-width: 768px) and (max-width: 1119.98px) {
 
-    .right-header__item:first-of-type, .right-header__item:nth-of-type(2), .right-header__item:nth-of-type(3) {
+    .icon-menu__item:first-of-type, .icon-menu__item:nth-of-type(2), .icon-menu__item:nth-of-type(3) {
         display: block;
     }
 
@@ -257,7 +257,7 @@ button {
         align-items: center;
     }
 
-    .icon-menu__item:nth-child(2)::before {
+    .main-header__item:nth-child(2)::before {
         content: url('../images/divider.svg');
         margin-left: 20px;
         margin-right: 20px;
