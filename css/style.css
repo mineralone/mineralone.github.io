@@ -55,7 +55,7 @@ body {
     border-bottom: 1px solid #D9FFF5;
 }
 
-.right-header__item:first-of-type, .right-header__item:nth-of-type(2), .right-header__item:nth-of-type(3) {
+.icon-menu__item:first-of-type, .icon-menu__item:nth-of-type(2), .icon-menu__item:nth-of-type(3) {
     display: none;
 }
 
@@ -66,11 +66,11 @@ button {
     background-color: #fff;
 }
 
-.left-header__item:first-of-type {
+.main-header__item:first-of-type {
     margin-left: 12px;
 }
 
-.right-header__item:last-of-type {
+.icon-menu__item:last-of-type {
     margin-right: 12px;
 }
 
@@ -86,7 +86,7 @@ button {
     justify-content: flex-start;
 }
 
-.left-header__item:last-of-type {
+.main-header__item:last-of-type {
     margin-left: 12px;
 }
 
@@ -94,16 +94,16 @@ button {
     justify-content: flex-end;
 }
 
-.right-header__item {
+.icon-menu__item {
     margin-left: 6px;
 }
 
-.right-header__item:nth-last-of-type(2) {
+.icon-menu__item:nth-last-of-type(2) {
     display: flex;
     align-items: center;
 }
 
-.right-header__item:nth-last-of-type(2)::before {
+.icon-menu__item:nth-last-of-type(2)::before {
     content: url('../images/divider.svg');
     padding-right: 12px;
     margin-left: 12px;
@@ -252,26 +252,26 @@ button {
         display: inline;
     }
 
-    .left-header__item:first-of-type {
+    .main-header__item:first-of-type {
         display: flex;
         align-items: center;
     }
 
-    .left-header__item:nth-child(2)::before {
+    .icon-menu__item:nth-child(2)::before {
         content: url('../images/divider.svg');
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .left-header__item:last-of-type {
+    .main-header__item:last-of-type {
         margin-left: 0;
     }
 
-    .left-header__item:first-child {
+    .main-header__item:first-child {
         margin-left: 12px;
     }
 
-    .right-header__item:nth-last-of-type(2)::before {
+    .icon-menu__item:nth-last-of-type(2)::before {
         content: url('../images/divider.svg');
         margin-right: 16px;
         margin-left: 12px;
@@ -372,11 +372,11 @@ button {
         background-color: #F8F8F8;
     }
 
-    .left-header {
+    .main-header {
         display: none;
     }
 
-    .right-header__item:nth-last-of-type(1)::before {
+    .icon-menu__item:nth-last-of-type(1)::before {
         content: "Оставить заявку";
         margin-right: 9px;
         margin-left: 20px;
@@ -389,13 +389,13 @@ button {
         white-space: nowrap;
     }
 
-    .right-header__item:nth-last-of-type(1) {
+    .icon-menu__item:nth-last-of-type(1) {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
-    .right-header__item:nth-last-of-type(2)::before {
+    .icon-menu__item:nth-last-of-type(2)::before {
         content: "Статус ремонта";
         margin-right: 9px;
         margin-left: 20px;
@@ -408,7 +408,7 @@ button {
         white-space: nowrap;
     }
 
-    .right-header__item:nth-last-of-type(2) {
+    .icon-menu__item:nth-last-of-type(2) {
         display: flex;
         justify-content: flex-end;
         align-items: center;
