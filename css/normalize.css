@@ -6,7 +6,7 @@ html{
     box-sizing: inherit;
 }
 
-@import url(../css/font.css) all;
+@import url(../css/font.css);
 
 .body {
     margin: 0;
@@ -15,66 +15,88 @@ html{
     background-color: #F8F8F8;
 }
 
-.button {
-    display: block;
-    border: none;
-    background-color: #fff;
-    filter: opacity(1);
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-property: filter;
-}
-
-.button:hover {
-    filter: opacity(0.7);
-}
-
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #D9FFF5;
 }
 
-.header__item {
-    display: flex;
-    align-items: center;
-    min-height: 88px;
-}
-
-.main-header {
+.communication {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.main-header__item {
-    padding-left: 12px;
+.header__item:first-of-type {
+    justify-content: flex-start;
+    flex-basis: 50%;
+}
+
+.header__item:first-of-type {
+    justify-content: flex-end;
+    flex-basis: 50%;
 }
 
 .communication {
     display: none;
 }
 
-.rem-info {
+
+.button {
+    display: block;
+    border: none;
+    background-color: #fff;
+}
+
+
+
+.rem-info__item:last-of-type {
+    margin-right: 12px;
+}
+
+.main-header {
+    justify-content: flex-start;
+    list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    list-style: none;
+    flex-basis: 50%;
+    min-height: 88px;
     padding: 0;
 }
 
-.rem-info__item {
-    padding-right: 12px;
+.rem-info {
+    justify-content: flex-end;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 50%;
+    min-height: 88px;
 }
 
-.rem-info::before {
+.main-header__item:last-of-type {
+    margin-left: 12px;
+}
+
+.communication__item {
+    margin-left: 6px;
+}
+
+.icon-menu__item:nth-last-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+
+.icon-menu__item:nth-last-of-type(2)::before {
     content: url('../images/divider.svg');
-    padding: 0 12px 0 16px;
+    padding-right: 16px;
+    margin-left: 12px;
 }
 
 .content {
@@ -92,7 +114,7 @@ html{
     background-color: #F8F8F8;
 }
 
-.content-header__text {
+.content-header h1 {
     font-family: 'TT Lakes Bold';
     font-weight: bold;
     font-style: normal;
@@ -109,48 +131,28 @@ html{
     padding-right: 20px;
 }
 
-.menu {
+
+.menu-list {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     overflow: auto;
     background-color: #F8F8F8;
-    list-style: none;
-    padding: 0;
 }
 
 .content__menu {
-    margin-left: 16px;
+    margin-left: -24px;
+    background-color: #F8F8F8;
 }
 
-.menu__item {
+.menu-list__link {
     display: flex;
-    justify-content: baseline;
-    align-items: center;
-    padding-right: 12px;
-    padding-left: 12px;
-    white-space: nowrap;
     min-height: 40px;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 0.2s;
+    align-items: center;
 }
 
-.menu__item:last-of-type {
-    margin-right: 16px;
-}
-
-.menu__item:hover {
-    transform: scaleX(1.1);
-}
-
-.menu__item:active {
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    background-color: #fff;
-}
-
-.menu__link {
+.menu-list__link a {
+    white-space: nowrap;
     text-decoration: none;
     font-family: 'TT Lakes Medium';
     font-weight: 500;
@@ -158,6 +160,29 @@ html{
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/*.menu-list__link:first-of-type {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #fff;
+} */
+
+.menu-list__link:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.menu-list__link:last-of-type {
+    margin-right: 16px;
+}
+
+
+.popup-text {
+    display: none;
 }
 
 .content__info {
@@ -179,10 +204,6 @@ html{
     width: 96%;
 }
 
-.popup-text {
-    display: none;
-}
-
 .info-read__button {
     display: flex;
     align-items: center;
@@ -196,14 +217,6 @@ html{
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
-    transform: scale(1);
-    transition-duration: 0.2s;
-    transition-property: transform;
-    transition-timing-function: linear;
-}
-
-.info-read__button:hover {
-    transform: scale(1.1);
 }
 
 .info-image {
@@ -222,40 +235,37 @@ html{
 
 @media (min-width: 768px) and (max-width: 1119.98px) {
 
-    .communication {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style: none;
-        padding: 0;
+    .icon-menu__item:first-child, .icon-menu__item:nth-child(2), .icon-menu__item:nth-child(3) {
+        display: block;
     }
 
-    .communication__item {
-        padding-left: 12px;
+    .popup-text {
+        display: inline;
     }
 
-    .header__item:last-child {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    .logo {
+    .main-header__item:first-of-type {
         display: flex;
         align-items: center;
     }
 
-    .logo::before {
+    .main-header__item:nth-child(2)::before {
         content: url('../images/divider.svg');
-        margin-right: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main-header__item:last-of-type {
+        margin-left: 0;
+    }
+
+    .main-header__item:first-child {
         margin-left: 12px;
     }
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+    .icon-menu__item:nth-last-of-type(2)::before {
+        content: url('../images/divider.svg');
+        margin-right: 16px;
+        margin-left: 12px;
     }
 
     .content__info {
@@ -265,6 +275,13 @@ html{
         width: 100%;
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
     .info-read {
         width: 47%;
     }
@@ -273,16 +290,9 @@ html{
         line-height: 20px;
     }
 
-    .popup-text {
-        display: inline;
-    }
-
     .info-read__button {
         margin-top: 12px;
-    }
 
-    .info-image {
-        width: 47%;
     }
 
     .info-image__photo-company {
@@ -290,6 +300,10 @@ html{
         padding-right: 12px;
         width: 100%;
         height: auto;
+    }
+
+    .info-image {
+        width: 47%;
     }
 
 }
@@ -300,61 +314,15 @@ html{
         background-color: #F8F8F8;
     }
 
-    .header {
-        border: none;
-        background-color: #F8F8F8;
+    .popup-text {
+        display: inline;
     }
 
-    .button {
-        background-color: #F8F8F8;
-    }
-
-    .main-header {
-        display: none;
-    }
-
-    .header__item:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .rem-info::before {
-        content: "";
-    }
-
-    .rem-info__item {
+    .content__info {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        
-    }
-
-    .rem-info__item:nth-last-of-type(1)::before {
-        content: "Оставить заявку";
-        margin-right: 8px;
-        margin-left: 20px;
-        font-family: 'TT Lakes Medium';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #1B1C21;
-        white-space: nowrap;
-    }
-
-    .rem-info__item:nth-last-of-type(2)::before {
-        content: "Статус ремонта";
-        margin-right: 8px;
-        margin-left: 20px;
-        font-family: 'TT Lakes Medium';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #1B1C21;
-        white-space: nowrap;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .content {
@@ -367,19 +335,8 @@ html{
         margin-top: 20px;
     }
 
-    .menu {
-        overflow: visible;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-self: flex-start;
-        width: 100%;
-    }
-
-    .content__info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
+    .info-image {
+        width: 47%;
     }
 
     .info-read {
@@ -390,17 +347,9 @@ html{
         line-height: 20px;
     }
 
-    .popup-text {
-        display: inline;
-    }
-
     .info-read__button {
         margin-top: 12px;
 
-    }
-
-    .info-image {
-        width: 47%;
     }
 
     .info-image__photo-company {
@@ -410,4 +359,67 @@ html{
         height: auto;
     }
     
+    .header {
+        border: none;
+    }
+
+    .button {
+        background-color: #F8F8F8;
+    }
+
+    .main-header {
+        display: none;
+    }
+
+    .icon-menu__item:nth-last-of-type(1)::before {
+        content: "Оставить заявку";
+        margin-right: 9px;
+        margin-left: 20px;
+        font-family: 'TT Lakes Medium';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        white-space: nowrap;
+    }
+
+    .icon-menu__item:nth-last-of-type(1) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .icon-menu__item:nth-last-of-type(2)::before {
+        content: "Статус ремонта";
+        margin-right: 9px;
+        margin-left: 20px;
+        font-family: 'TT Lakes Medium';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        white-space: nowrap;
+    }
+
+    .icon-menu__item:nth-last-of-type(2) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-list {
+        overflow: visible;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: flex-start;
+        width: 100%;
+    }
+    
+    .header__item:last-of-type {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }

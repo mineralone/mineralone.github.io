@@ -4,92 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
     <title>Макет - блок 1.3</title> 
-    </head>
+  </head>
   <body class="body">
     <header class="header">
-                      <div class="header__item main-header">
-                      <button type="button" class="main-header__item button">
-                      <img src="images/burger.svg" alt="general-menu">
-                      </button>
-                          <div class="main-header__item logo">
-                                <a href="#">
-                                <img src="images/Group.svg" alt="logo">
-                                </a>
-                          </div>
-                      </div>
-                    
-                      <div class="header__item icon-menu">
-                                <button type="button" class="icon-menu__item button">
-                                <img src="images/call.svg" alt="call">
-                                </button>
-                                <button type="button" class="icon-menu__item button">
-                                <img src="images/chat.svg" alt="chat">
-                                </button>
-                                <button type="button" class="icon-menu__item button">
-                                <img src="images/profile.svg" alt="profile">
-                                </button>
-                                <button type="button" class="icon-menu__item button">
-                                <img src="images/repair.svg" alt="repair-status">
-                                </button>
-                                <button type="button" class="icon-menu__item button">
-                                <img src="images/checkstatus.svg" alt="checkstatus-search">
-                                </button>
-                      </div>
-       </header> 
-
+        <div class="header__item main-header">
+          <button class="main-header__item button" type="button">
+            <img src="images/burger.svg" alt="general-menu">
+          </button>
+          <div class="main-header__item logo">
+            <a href="#">
+              <img src="images/Group.svg" alt="logo">
+            </a>
+          </div>
+        </div>    
+        <div class="header__item">
+          <ul class="communication">
+            <li class="communication__item">
+              <button class="communication__button button" type="button">
+                  <img src="images/call.svg" alt="call">
+              </button>
+            </li>
+            <li class="communication__item">  
+              <button class="communication__button button" type="button">
+                  <img src="images/chat.svg" alt="chat">
+              </button>
+            </li>
+            <li class="communication__item">
+              <button class="communication__button button" type="button">
+                  <img src="images/profile.svg" alt="profile">
+              </button>
+            </li>
+          </ul> 
+          <ul class="rem-info">
+            <li class="rem-info__item">
+              <button class="rem-info__button button" type="button">
+                  <img src="images/repair.svg" alt="repair-status">
+              </button>
+            </li>
+            <li class="rem-info__item">
+              <button class="rem-info__button button" type="button">
+                  <img src="images/checkstatus.svg" alt="checkstatus-search">
+              </button>
+            </li>
+          </ul>
+        </div>
+    </header> 
     <section class="content">
-
-      <header class="content__caption content-header">
-        <h1> Услуги и сервисы </h1>
-      </header>
-
-        <nav class="content__menu">
-          <ul class="menu-list">
-              <li class="menu-list__link">
-                  <a href="#">
-                  Ремонтируемые устройства
-                  </a>
-                </li>
-              <li class="menu-list__link">
-                  <a href="#">
-                  Ремонтируемые бренды
-                  </a>
-              </li>
-              <li class="menu-list__link">
-                  <a href="#">
-                  Цены на услуги
-                  </a>
-                </li>
-              <li class="menu-list__link">
-                  <a href="#">
-                  Адреса сервисных центров
-                  </a>
-                </li>
-              <li class="menu-list__link">
-                  <a href="#">
-                  Специальные цены
-                  </a>
-                </li>
-              <li class="menu-list__link">
-                  <a href="#">
-                  Отзывы
-                  </a>
-                </li>
-            </ul>  
+        <header class="content__caption content-header">
+          <h1 class="content-header__text"> Услуги и сервисы </h1>
+        </header>
+        <nav class="content__menu menu-nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Ремонтируемые устройства </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Ремонтируемые бренды </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Цены на услуги </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Адреса сервисных центров </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Специальные цены </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Отзывы </a>
+            </li>
+          </ul>  
         </nav>
         <div class="content__info">
           <div class="info-read">
-          <div class="info-read__text">
-            <p> Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-            </p>
-            <p class="popup-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера , 
+            <div class="info-read__text">
+              <p> Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                  Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+              </p>
+              <p class="popup-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера , 
                 что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по 
                 рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </p>
+              </p>
             </div>
-              <button type="button" class="info-read__button"><img src="images/expand.svg"> Читать далее</button>
+            <button class="info-read__button" type="button">
+              <img src="images/expand.svg"> 
+              Читать далее
+            </button>
           </div>
         <div class="info-image">
           <img src="images/content.jpg" class="info-image__photo-company" alt="content">
