@@ -140,15 +140,19 @@ html{
     margin-right: 16px;
 }
 
-.menu__item:hover {
-    transform: scaleX(1.1);
-}
-
 .menu__item_active {
     border: 2px solid #B8FFEC;
     border-radius: 6px;
     background-color: #fff;
     margin: 0 8px;
+}
+
+.menu__item:hover {
+    transform: scaleX(1.1);
+}
+
+.menu__item_active:hover {
+    transform: none;
 }
 
 .menu__link {
