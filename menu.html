@@ -2,103 +2,109 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style_menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_sidebar-menu.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/button/button.css">
+    <link rel="stylesheet" href="css/communication/communication.css">
+    <link rel="stylesheet" href="css/rem-info/rem-info.css">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/header/header_sidebar.css">
+    <link rel="stylesheet" href="css/menu-list/menu-list.css">
+    <link rel="stylesheet" href="css/menu-list/menu-list_sidebar.css">
+    <link rel="stylesheet" href="css/langs/langs.css">
+    <link rel="stylesheet" href="css/contact-info/contact-info.css">
     <title>Макет - блок 1.4</title> 
   </head>
   <body>
-    <aside class="popup-side-menu">
-      <header class="header">
-        <div class="header__item main-header">
-          <button class="main-header__item button" type="button">
-            <img src="images/burger-close.svg" alt="menu-close">
-          </button>
-          <div class="main-header__item logo">
-            <a href="#">
-              <img src="images/Group.svg" alt="logo">
-            </a>
-          </div>
-        </div>    
-        <div class="header__item">
-          <ul class="rem-info">
-            <li class="rem-info__item">
-              <button class="rem-info__button button" type="button">
-                  <img src="images/search.svg" alt="search">
-              </button>
-            </li>
-          </ul>
-        </div>
+    <aside class="sidebar-menu">
+      <header class="header sidebar-menu__item">
+        <button class="header__burger button" type="button">
+          <img src="images/burger-close.svg" alt="menu-close">
+        </button>
+        <a class="header__logo logo" href="#">
+          <img src="images/Group.svg" alt="logo">
+        </a>
+        <ul class="header__rem-info rem-info">
+          <li class="rem-info__item">
+            <button class="rem-info__button rem-info__button_side button button_side" type="button">
+                <img src="images/search.svg" alt="search">
+            </button>
+          </li>
+        </ul>
       </header> 
-      <nav class="sidebar-menu">
-        <ul class="menu-side">
-          <li class="menu-side__item menu-side__item_active">
-            <a class="menu-side__link menu-side__link_active" href="#"> Ремонт техники </a>
+      <nav class="menu sidebar-menu__item">
+        <ul class="menu-list">
+          <li class="menu-list__item menu-list__item_active">
+            <a class="menu-list__link menu-list__link_active" href="#"> Ремонт техники </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Услуги и сервисы </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Услуги и сервисы </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Корпоративным клиентам </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Корпоративным клиентам </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Продавцам техники </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Продавцам техники </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Партнерам </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Партнерам </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Производителям </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Производителям </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Наши сервисные центры </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Наши сервисные центры </a>
           </li>
-          <li class="menu-side__item">
-            <a class="menu-side__link" href="#"> Контакты </a>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#"> Контакты </a>
           </li>
         </ul>  
       </nav>
-      <footer class="footer">
-        <div class="footer__item">
-            <ul class="communication">
-              <li class="communication__item">
-                <button class="communication__button button" type="button">
-                    <img src="images/call.svg" alt="call">
-                </button>
-              </li>
-              <li class="communication__item">  
-                <button class="communication__button button" type="button">
-                    <img src="images/chat.svg" alt="chat">
-                </button>
-              </li>
-              <li class="communication__item">
-                <button class="communication__button button" type="button">
-                    <img src="images/profile.svg" alt="profile">
-                </button>
-              </li>
-            </ul> 
-        </div>
-        <div class="footer__item">
-          <div class="contact-info">
-            <p class="contact-info__email">
-              <a class="contact-info__email-link" href="mailto:mail@cps.com"> mail@cps.com </a>
-            </p>
-            <p class="contact-info__tel">
-              <a class="contact-info__tel-link" href="tel:8 800 890 8900"> 8 800 890 8900 </a>
-            </p>
-          </div>
-        </div>
-        <div class="footer__item lang-switch">
-            <label class="lang-switch__radio-btn lang-switch__radio-btn_checked">
-              RU <input class="radio-lang" name="radio-lang" type="radio" value="lang-page-RU" checked>
-            </label>
-            <label class="lang-switch__radio-btn">
-              EN <input class="radio-lang" name="radio-lang" type="radio" value="lang-page-EN">
-            </label>
-            <label class="lang-switch__radio-btn">
-              CH <input class="radio-lang" name="radio-lang" type="radio" value="lang-page-CH">
-            </label>
-        </div>
+      <footer class="footer sidebar-menu__item">
+        <ul class="footer__communication communication">
+          <li class="communication__item">
+            <button class="communication__button button" type="button">
+              <img src="images/call.svg" alt="call">
+            </button>
+          </li>
+          <li class="communication__item">  
+            <button class="communication__button button" type="button">
+              <img src="images/chat.svg" alt="chat">
+            </button>
+          </li>
+          <li class="communication__item">
+            <button class="communication__button button" type="button">
+              <img src="images/profile.svg" alt="profile">
+            </button>
+          </li>
+        </ul> 
+        <address class="footer__address contact-info">
+          <p class="contact-info__email">
+            <a class="contact-info__email-link" href="mailto:mail@cps.com"> mail@cps.com </a>
+          </p>
+          <p class="contact-info__tel">
+            <a class="contact-info__tel-link" href="tel:8 800 890 8900"> 8 800 890 8900 </a>
+          </p>
+        </address>
+        <ul class="footer__langs langs">
+          <li class="langs__item">
+            <button class="langs__button langs__button_active" type="button">
+              RU
+            </button>
+          </li>
+          <li class="langs__item">  
+            <button class="langs__button" type="button">
+              EN
+            </button>
+          </li>
+          <li class="langs__item">
+            <button class="langs__button" type="button">
+              CH
+            </button>
+          </li>
+        </ul>
       </footer>
     </aside>  
   </body>

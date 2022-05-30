@@ -1,0 +1,11 @@
+@media (min-width: 1120px) {
+
+    .menu-list {
+        overflow: visible;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: flex-start;
+        width: 100%;
+    }
+    
+    }

@@ -1,0 +1,24 @@
+@media (min-width: 768px) and (max-width: 1119.98px) {
+
+    .header__rem-info {
+        margin-left: 0;
+    }
+    
+    .header__communication {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: auto;
+        margin-right: -16px;
+    }
+    
+    .header__logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__logo::before {
+        content: url('../../images/divider.svg');
+        padding-right: 20px;
+    }
+    }

@@ -1,0 +1,9 @@
+.communication {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.communication__item {
+    margin-left: 6px;
+}

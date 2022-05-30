@@ -1,0 +1,15 @@
+.header {
+    border: none;
+}
+
+.header__rem-info::before {
+    content: '';
+}
+
+.header__burger {
+    margin-left: 20px;
+}
+
+.header__rem-info {
+    margin-right: 20px;
+}
