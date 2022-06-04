@@ -1,15 +1,12 @@
+@import url(../header/header__rem-info_sidebar.css);
+@import url(../header/header__burger.css);
+@import url(../header/header__logo.css);
+
 .header {
-    border: none;
-}
-
-.header__rem-info::before {
-    content: '';
-}
-
-.header__burger {
-    margin-left: 20px;
-}
-
-.header__rem-info {
-    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    min-height: 88px;
+    width: 100%;
 }

@@ -1,0 +1,19 @@
+@import url(../font.css);
+@import url(../button/button.css);
+@import url(../list/list.css);
+@import url(../link/link.css);
+@import url(../content-subtitle/content-subtitle.css);
+@import url(../content/content__item.css);
+@import url(../content-list/content-list.css);
+
+.content {
+    min-width: 320px;
+    background-color: #F8F8F8;
+    overflow: hidden;
+}
+
+.brands__btn-see {
+    display: none;
+}
+
+

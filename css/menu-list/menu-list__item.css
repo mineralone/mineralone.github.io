@@ -1,0 +1,20 @@
+.menu-list__item {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding-right: 12px;
+    padding-left: 12px;
+    white-space: nowrap;
+    min-height: 40px;
+}
+
+.menu-list__item:last-of-type {
+    margin-right: 16px;
+}
+
+.menu-list__item_active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 0 8px;
+}

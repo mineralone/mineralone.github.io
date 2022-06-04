@@ -1,0 +1,37 @@
+@import url(../floating-button/floating-button_show.css);
+
+.floating-button_show-el::after {
+    content: 'Показать все';
+    padding-left: 8px;
+    font-family: 'TT Lakes Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.floating-button_show-el {
+    transform: rotate(360deg) scale(1);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    font-family: 'TT Lakes Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.floating-button_show-el:hover {
+    transform: rotate(360deg) scale(1.1);
+    font-family: 'TT Lakes Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}

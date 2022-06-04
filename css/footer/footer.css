@@ -1,0 +1,11 @@
+@import url(../footer/footer__address.css);
+@import url(../footer/footer__communication.css);
+@import url(../footer/footer__langs.css);
+@import url(../contact-info/contact-info.css);
+
+.footer_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

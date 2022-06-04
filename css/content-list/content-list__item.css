@@ -1,0 +1,10 @@
+@import url(../font.css);
+
+.content-list__item {
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+border-radius: 6px;
+min-width: 0;
+display: flex;
+justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.info-image__photo-company {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+
+.info-image__photo-company {
+    border-radius: 6px;
+    padding-right: 12px;
+    width: 100%;
+    height: auto;
+}
+}

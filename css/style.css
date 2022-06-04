@@ -1,3 +1,14 @@
+@import url(../css/font.css);
+@import url(../css/normalize.css);
+@import url(../css/list/list.css);
+@import url(../css/link/link.css);
+@import url(../css/link/link_active.css);
+@import url(../css/button/button.css);
+@import url(../css/header/header.css);
+@import url(../css/main-content/main-content.css);
+@import url(../css/main-cont-header/main-cont-header.css);
+
+
 html{
     box-sizing: border-box;
 }
@@ -6,207 +17,7 @@ html{
     box-sizing: inherit;
 }
 
-@import url(../css/font.css) all;
-@import url(../css/normalize.css) all;
-@import url(../css/button/button.css) all;
-@import url(../css/button/button_desctop.css) all;
-@import url(../css/communication/communication.css) all;
-@import url(../css/rem-info/rem-info.css) all;
-@import url(../css/rem-info/rem-info_desctop.css) all;
-@import url(../css/header/header.css) all;
-@import url(../css/header/header_tablet.css) all;
-@import url(../css/header/header_desctop.css) all;
-@import url(../css/menu-list/menu-list.css) all;
-@import url(../css/menu-list/menu-list_desctop.css) all;
-
 .body {
     min-width: 320px;
     background-color: #F8F8F8;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    background-color: #F8F8F8;
-    overflow: hidden;
-}
-
-.content__menu {
-    margin-left: 16px;
-}
-
-.content-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #F8F8F8;
-}
-
-.content-header__text {
-    font-family: 'TT Lakes Bold';
-    font-weight: bold;
-    font-style: normal;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
-    white-space: nowrap;
-}
-
-.content-header::before {
-    content: url('../images/highlight.svg');
-    padding: 0;
-    padding-right: 20px;
-}
-
-.content__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.info-read__text {
-    display: block;
-    padding-left: 26px;
-    margin-right: 16px;
-    font-family: 'TT Lakes Regular';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: #1B1C21;
-    width: 96%;
-}
-
-.popup-text {
-    display: none;
-}
-
-.info-read__button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 12px;
-    border: none;
-    background-color: #F8F8F8;
-    font-family: 'TT Lakes Medium';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #1B1C21;
-    transform: scale(1);
-    transition-duration: 0.2s;
-    transition-property: transform;
-    transition-timing-function: linear;
-}
-
-.info-read__button:hover {
-    transform: scale(1.1);
-}
-
-.info-image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-
-.info-image__photo-company {
-    width: 100%;
-    height: auto;
-    margin-top: 16px;
-    margin-bottom: 8px;
-}
-
-@media (min-width: 768px) and (max-width: 1119.98px) {
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .content__info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .info-read {
-        width: 47%;
-    }
-
-    .info-read__text {
-        line-height: 20px;
-    }
-
-    .popup-text {
-        display: inline;
-    }
-
-    .info-read__button {
-        margin-top: 12px;
-    }
-
-    .info-image {
-        width: 47%;
-    }
-
-    .info-image__photo-company {
-        border-radius: 6px;
-        padding-right: 12px;
-        width: 100%;
-        height: auto;
-    }
-
-}
-
-@media (min-width: 1120px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .content__caption {
-        margin-top: 20px;
-    }
-
-    .content__info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .info-read {
-        width: 47%;
-    }
-
-    .info-read__text {
-        line-height: 20px;
-    }
-
-    .popup-text {
-        display: inline;
-    }
-
-    .info-read__button {
-        margin-top: 12px;
-
-    }
-
-    .info-image {
-        width: 47%;
-    }
-
-    .info-image__photo-company {
-        border-radius: 6px;
-        padding-right: 12px;
-        width: 100%;
-        height: auto;
-    }
 }

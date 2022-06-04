@@ -1,13 +1,20 @@
 .button {
-    display: block;
     border: none;
-    background-color: #fff;
-    filter: opacity(1);
+    background-color: inherit;
+    transform: scale(1);
+    transition-property: transform;
     transition-duration: 0.3s;
-    transition-timing-function: linear;
-    transition-property: filter;
+    font-family: 'TT Lakes Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    display: flex;
+    align-items: center;
 }
 
 .button:hover {
-    filter: opacity(0.7);
+    transform: scale(1.1);
 }

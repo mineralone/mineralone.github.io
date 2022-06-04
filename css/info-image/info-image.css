@@ -1,0 +1,16 @@
+@import url(../info-image/info-image__photo-company.css);
+
+
+.info-image {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .info-image {
+        width: 47%;
+    }
+
+} 
