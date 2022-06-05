@@ -1,0 +1,7 @@
+.communication__item {
+    padding-left: 12px;
+}
+
+.communication__item:first-child {
+    padding-left: 0;
+}

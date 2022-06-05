@@ -1,0 +1,15 @@
+@import url(../../css/font.css);
+@import url(../floating-button/floating-button_hide.css);
+@import url(../floating-button/floating-button_show.css);
+@import url(../floating-button/floating-button_show-el.css);
+
+.floating-button, .floating-button:active {
+    display: flex;
+    font-family: 'TT Lakes Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}

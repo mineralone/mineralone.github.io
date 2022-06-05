@@ -1,0 +1,11 @@
+@import url(../rem-info/rem-info.css);
+
+.header__rem-info {
+    margin-left: auto;
+    margin-right: 12px;
+}
+
+.header__rem-info::before {
+    content: url('../../images/divider.svg');
+    padding-right: 12px;
+}

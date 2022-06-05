@@ -1,0 +1,16 @@
+@import url(../content-list/content-list__item.css);
+
+@media (min-width: 768px) {
+
+.content-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    column-gap: 12px;
+    row-gap: 12px;
+    padding: 0;
+}
+
+}

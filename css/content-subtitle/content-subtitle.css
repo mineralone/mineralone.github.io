@@ -1,0 +1,10 @@
+@import url(../content-subtitle/content-subtitle__text.css);
+
+.content-subtitle {
+    width: 100%;
+    min-height: 56px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    border-top: 1px solid #D9FFF5;
+    display: flex;
+    align-items: center;
+}

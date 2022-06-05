@@ -1,0 +1,17 @@
+.brands-list__item {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    
+.brands-list__item {
+    width: 240px;
+}
+
+}

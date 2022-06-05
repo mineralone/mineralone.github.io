@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+
+.brands-list_show {
+        max-height: 100vh;
+        transition-property: max-height;
+        transition-duration: 2s;
+}
+
+}
