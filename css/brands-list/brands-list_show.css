@@ -1,9 +1,13 @@
 @media (min-width: 768px) {
 
 .brands-list_show {
+<<<<<<< HEAD
         max-height: 100vh;
         transition-property: max-height;
         transition-duration: 2s;
+=======
+        height: auto;
+>>>>>>> f6b2fc7c1f6cf84ff3f8ff164ffb29e9de9fe70f
 }
 
 }

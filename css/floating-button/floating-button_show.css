@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 @import url(../../css/font.css);
 
 .floating-button_show::after, .floating-button_show:active::after{
+=======
+@import url(../font.css);
+
+.floating-button_show::after {
+>>>>>>> f6b2fc7c1f6cf84ff3f8ff164ffb29e9de9fe70f
     content: 'Читать далее';
     padding-left: 8px;
     font-family: 'TT Lakes Regular';
@@ -12,7 +18,11 @@
     color: #1B1C21;
 }
 
+<<<<<<< HEAD
 .floating-button_show, .floating-button_show:active {
+=======
+.floating-button_show {
+>>>>>>> f6b2fc7c1f6cf84ff3f8ff164ffb29e9de9fe70f
     transform: rotate(360deg) scale(1);
     transition-duration: 0.3s;
     transition-property: transform;
