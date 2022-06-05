@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 @import url(../../css/font.css);
 @import url(../floating-button/floating-button_show.css);
 
 .floating-button_show-el::after, .floating-button_show-el:active::after {
-=======
-@import url(../floating-button/floating-button_show.css);
-
-.floating-button_show-el::after {
->>>>>>> f6b2fc7c1f6cf84ff3f8ff164ffb29e9de9fe70f
     content: 'Показать все';
     padding-left: 8px;
     font-family: 'TT Lakes Regular';
@@ -19,11 +13,7 @@
     color: #1B1C21;
 }
 
-<<<<<<< HEAD
 .floating-button_show-el, .floating-button_show-el:active {
-=======
-.floating-button_show-el {
->>>>>>> f6b2fc7c1f6cf84ff3f8ff164ffb29e9de9fe70f
     transform: rotate(360deg) scale(1);
     transition-duration: 0.3s;
     transition-property: transform;
