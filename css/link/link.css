@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+    display: block;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform-origin: 50% 50%;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}

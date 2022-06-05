@@ -1,0 +1,33 @@
+@import url(../header/header__rem-info.css);
+@import url(../header/header__burger.css);
+@import url(../header/header__communication.css);
+@import url(../header/header__logo.css);
+@import url(../header/header__rem-info_tablet.css) screen and (min-width: 768px);
+@import url(../header/header__communication_tablet.css) screen and (min-width: 768px);
+@import url(../header/header__logo_tablet.css) screen and (min-width: 768px);
+@import url(../header/header__rem-info_desktop.css) screen and (min-width: 1440px);
+@import url(../header/header__communication_desktop.css) screen and (min-width: 1440px);
+@import url(../header/header__logo_desktop.css) screen and (min-width: 1440px);
+@import url(../header/header__burger_desktop.css) screen and (min-width: 1440px);
+@import url(../rem-info/rem-info__item_pseudo-el.css) screen and (min-width: 1440px);
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    min-height: 88px;
+    width: 100%;
+    border-bottom: 1px solid #D9FFF5;
+}
+@media (min-width: 1440px) {
+    
+.header {
+    background-color: #F8F8F8;
+    border: none;
+    position: absolute;
+    width: auto;
+    top: 10;
+    right: 0;
+    }
+}

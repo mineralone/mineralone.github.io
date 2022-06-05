@@ -1,0 +1,9 @@
+@import url(../contact-info/contact-info__email.css);
+@import url(../contact-info/contact-info__tel.css);
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

@@ -1,0 +1,38 @@
+@import url(../../css/font.css);
+
+.langs {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.langs__button {
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    padding-left: 12px;
+    border: none;
+    background-color: #fff;
+    transform: scale(1);
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: transform, text-decoration;
+}
+
+.langs__button:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.langs__button_active {
+    color: #7E7E82;
+}
+
+.langs__button_active:hover {
+    transform: none;
+    text-decoration: none;
+}

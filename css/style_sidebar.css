@@ -1,0 +1,30 @@
+@import url(../css/font.css);
+@import url(../css/normalize.css);
+@import url(../css/list/list.css);
+@import url(../css/link/link.css);
+@import url(../css/link/link_active.css);
+@import url(../css/button/button.css);
+@import url(../css/header/header_sidebar.css);
+@import url(../css/communication/communication.css);
+@import url(../css/langs/langs.css);
+@import url(../css/footer/footer.css);
+@import url(../css/menu-list/menu-list_side.css);
+
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.sidebar-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    background-color: #FFFFFF;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 
+                16px 0px 52px rgba(14, 24, 80, 0.2);
+}

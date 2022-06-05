@@ -1,0 +1,18 @@
+.menu-list__item_side-active {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    color: #7E7E82;
+    border: none;
+    background-color: #fff;
+    margin: 0;
+}
+
+.menu-list__item_side-active:hover {
+    transform: none;
+}
+
+.menu-list__item_side-active::before {
+    content: url('../../images/highlight.svg');
+    margin-right: 20px;
+}

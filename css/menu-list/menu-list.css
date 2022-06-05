@@ -1,0 +1,13 @@
+@import url(../menu-list/menu-list__item.css);
+@import url(../menu-list/menu-list__link.css);
+@import url(../menu-list/menu-list_desctop.css);
+
+.menu-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow: auto;
+    background-color: #F8F8F8;
+    list-style: none;
+    padding: 0;
+}
