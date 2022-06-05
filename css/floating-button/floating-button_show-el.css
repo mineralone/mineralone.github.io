@@ -1,7 +1,7 @@
 @import url(../../css/font.css);
 @import url(../floating-button/floating-button_show.css);
 
-.floating-button_show-el::after, .floating-button_show-el:active::after {
+.floating-button_show-el::after {
     content: 'Показать все';
     padding-left: 8px;
     font-family: 'TT Lakes Regular';
@@ -13,7 +13,7 @@
     color: #1B1C21;
 }
 
-.floating-button_show-el, .floating-button_show-el:active {
+.floating-button_show-el {
     transform: rotate(360deg) scale(1);
     transition-duration: 0.3s;
     transition-property: transform;

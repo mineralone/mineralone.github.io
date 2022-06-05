@@ -1,6 +1,6 @@
 @import url(../../css/font.css);
 
-.floating-button_show::after, .floating-button_show:active::after{
+.floating-button_show::after {
     content: 'Читать далее';
     padding-left: 8px;
     font-family: 'TT Lakes Regular';
@@ -12,7 +12,7 @@
     color: #1B1C21;
 }
 
-.floating-button_show, .floating-button_show:active {
+.floating-button_show {
     transform: rotate(360deg) scale(1);
     transition-duration: 0.3s;
     transition-property: transform;
