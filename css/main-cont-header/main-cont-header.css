@@ -1,8 +1,0 @@
-@import url(../main-cont-header/main-cont-header__text.css);
-
-.main-content-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #F8F8F8;
-}

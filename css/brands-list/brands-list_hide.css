@@ -1,9 +1,0 @@
-@media (min-width: 768px) {
-
-    .brands-list_hide {
-            max-height: 200px;
-            overflow: hidden;
-            transition-property: max-height;
-            transition-duration: 1s;
-    }
-    }

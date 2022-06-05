@@ -1,9 +1,0 @@
-.header__logo {
-    display: flex;
-    align-items: center;
-}
-    
-.header__logo::before {
-    content: url('../../images/divider.svg');
-    padding-right: 20px;
-}
